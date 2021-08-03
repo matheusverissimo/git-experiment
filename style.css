@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    outline: none;
+}
+
+:root{
+    --color-1: #38026b;
+    --color-2: purple;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 100vh;
+    background-image: linear-gradient(to right, rgb(121, 86, 218), rgb(104, 2, 104)); 
+}
+
+input{
+    display: block;
+}
+
+.wraper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login{
+    background-color: #ffffff;
+    min-width: 350px;
+    height: 300px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 5px black;
+}
+
+input[type=text], input[type=email], input[type=password]{
+    height: 35px;
+    width: 85%;
+    padding: 5px 8px 5px 8px;
+    border-radius: 10px;
+    border: 1px solid var(--color-2);
+    animation: forwards;
+    color: var(--color-1);
+    font-weight: bold;
+    margin-top: 7px;
+}
+
+.logo{
+    font-size: 40px;
+    color: var(--color-2);
+}
+
+input:focus{
+    border: 2px solid #38026b;
+}
+
+input::placeholder{
+    font-weight: 300;
+    font-size: 14px;
+}
+
+input[type=checkbox]{
+    display: inline;
+}
+
+button.submit-btn{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    color: white;
+    background-image: linear-gradient(to right, rgb(101, 58, 218), purple); 
+    border: 1px solid #38026b;
+    box-shadow: 1px 1px 1px 1px grey;
+    border-radius: 30px;
+    width: 55%;
+    padding: 4px 30px 4px 30px;
+    transition: width 0.1s linear;
+}
+
+button.submit-btn:hover{
+    width: 70%;
+}
+
+.default-txt{
+    font-weight: 500;
+    margin-top: 10px;
+    color: #38026b;
+}
+
+div.remember-div{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover{
+    text-decoration: underline;
+}
